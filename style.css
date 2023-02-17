@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
 
 :root{
-  --green:#3A9943;
+  --green:#48c244;
 }
 
 *{
@@ -9,9 +9,10 @@
   margin:0; padding:0;
   box-sizing: border-box;
   text-transform: capitalize;
-  outline: none; border:none;
+  /* outline: 1px solid red; border:none; */
   text-decoration: none;
   transition: all .2s linear;
+
 }
 
 *::selection{
@@ -72,9 +73,30 @@ section{
 
 
 .header-2 .logo{
+  display: block;
+  outline: 1px solid red;
   font-weight: bolder;
   font-size: 3rem;
   color:#fff;
+
+}
+
+.nav__logo {
+  display: flex;
+  align-items: center;
+  gap:10px;
+}
+
+.nav__logo figure img {
+    width: 100%;
+    max-width: 10rem;
+    display: block;
+    margin: 0 auto;
+}
+
+.nav__logo h1 {
+  color: #ffffff;
+  font-size: 3.5rem;
 }
 
 
@@ -83,7 +105,7 @@ section{
   align-items: center;
   width: 50rem;
   padding:1.5rem;
-  background:rgba(255,255,255,.2);
+  background: #fffffff8;
   border-radius: .5rem;
 }
 
@@ -91,17 +113,17 @@ section{
   width: 100%;
   background:none;
   text-transform: none;
-  color:#fff;
+  color:#000;
   font-size: 1.7rem;
 }
 
 .header-2 .search-bar-container #search-bar::placeholder{
   text-transform: capitalize;
-  color:#ddd;
+  color:#141212c5;
 }
 
 .header-2 .search-bar-container label{
-  color:#fff;
+  color:#000;
   cursor: pointer;
   font-size: 2rem;
   padding:0 .5rem;
@@ -113,7 +135,7 @@ section{
 
 .header-3 .navbar a{
   color:#666;
-  font-size: 2rem;
+  font-size: 2.5rem;
   margin-right: 2rem;
 }
 
@@ -172,7 +194,7 @@ section{
 }
 
 .home .home-slider .box .content h3{
-  font-size: 6rem;
+  font-size: 5rem;
   color:#333;
   padding:.5rem 0;
 }
@@ -367,6 +389,11 @@ section{
   margin:2rem;
 }
 
+.product .box-container .box .btn i{
+  font-size: 3rem;
+  
+}
+
 .icons-container{
   display: flex;
   flex-wrap: wrap;
@@ -491,8 +518,8 @@ section{
 
 .contact .row form .inputBox label{
   position: absolute;
-  top:2.3rem; left:0;
-  font-size: 1.7rem;
+  top:2.3rem; left:1rem;
+  font-size: 1.5rem;
 }
 
 .contact .row form .inputBox input:focus ~ label,
