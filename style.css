@@ -9,7 +9,6 @@
   margin:0; padding:0;
   box-sizing: border-box;
   text-transform: capitalize;
-  /* outline: 1px solid red; border:none; */
   text-decoration: none;
   transition: all .2s linear;
 
@@ -107,13 +106,15 @@ section{
   padding:1.5rem;
   background: #fffffff8;
   border-radius: .5rem;
+  box-shadow: 0px 5px 3px #000;
 }
 
 .header-2 .search-bar-container #search-bar{
   width: 100%;
   background:none;
   text-transform: none;
-  color:#000;
+  border: none;
+  outline: none;
   font-size: 1.7rem;
 }
 
@@ -123,7 +124,7 @@ section{
 }
 
 .header-2 .search-bar-container label{
-  color:#000;
+  color:#000000;
   cursor: pointer;
   font-size: 2rem;
   padding:0 .5rem;
